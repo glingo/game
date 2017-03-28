@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routing>
+    
+    <route name="game.home" path="/">
+        <default key="_controller">game_controller:all</default>
+    </route>
+    
+    <route name="game.games" path="/persons">
+        <default key="_controller">game_controller:all</default>
+    </route>
+    
+    <route name="game.games.save" path="/games/save">
+        <default key="_controller">game_controller:save</default>
+    </route>
+    
+    <route name="game.games.create" path="/games/create">
+        <default key="_controller">game_controller:create</default>
+    </route>
+    
+    <route name="game.games.play" path="/games/play">
+        <default key="_controller">game_controller:play</default>
+    </route>
+    
+</routing>

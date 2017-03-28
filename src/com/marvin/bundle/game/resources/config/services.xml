@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container>
+    <services>
+        <service id="game_repository" class="com.marvin.bundle.game.repository.GameRepository">
+        </service>
+        
+        <service id="game_manager" class="com.marvin.bundle.game.business.GameManager">
+            <argument type="service" ref="game_repository" />
+        </service>
+        
+        <service id="game_controller" class="com.marvin.bundle.game.controller.GameController">
+            <argument type="service" ref="game_manager" />
+        </service>
+        
+        
+        <!--views-->
+        <service id="persons" class="com.marvin.bundle.game.resources.view.swing.Home">
+            <argument type="service" ref="action_handler" />
+        </service>
+        
+        <!--views-->
+        <service id="games" class="com.marvin.bundle.game.resources.view.swing.Home">
+            <argument type="service" ref="action_handler" />
+        </service>
+        
+        <service id="game" class="com.marvin.bundle.game.resources.view.swing.game.Create">
+            <argument type="service" ref="action_handler" />
+        </service>
+        
+        <service id="play" class="com.marvin.bundle.game.resources.view.swing.game.Play">
+            <argument type="service" ref="action_handler" />
+        </service>
+    </services>
+</container>
