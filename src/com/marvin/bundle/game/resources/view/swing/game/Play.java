@@ -1,14 +1,14 @@
 package com.marvin.bundle.game.resources.view.swing.game;
 
-import com.marvin.bundle.framework.handler.Handler;
 import com.marvin.bundle.swing.resources.view.SwingView;
+import com.marvin.bundle.framework.mvc.Handler;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
+import javax.swing.Action;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -17,8 +17,8 @@ public class Play extends SwingView {
 
     private Canvas canvas;
 
-    public Play(Handler handler) {
-        super(handler);
+    public Play(String name) {
+        super(name);
     }
 
     @Override

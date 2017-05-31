@@ -1,8 +1,8 @@
 package com.marvin.bundle.game.controller;
 
-import com.marvin.bundle.framework.mvc.ModelAndView;
+import com.marvin.component.mvc.ModelAndView;
 import com.marvin.bundle.framework.mvc.controller.Controller;
-import com.marvin.bundle.framework.mvc.model.Model;
+import com.marvin.component.mvc.model.Model;
 import com.marvin.bundle.game.business.GameManager;
 import com.marvin.bundle.game.model.Game;
 import com.marvin.component.form.FormTypeInterface;
@@ -42,13 +42,11 @@ public class GameController extends Controller {
 
         model.put("gameForm", form);
 
-        ModelAndView mav = new ModelAndView("game", model);
-        return mav;
+        return ModelAndView.builder().view("game").model(model).build();
     }
     
      public ModelAndView play(Model model) {
         model.put("game", new Game());
-        ModelAndView mav = new ModelAndView("play", model);
-        return mav;
+        return ModelAndView.builder().view("play").model(model).build();
     }
 }

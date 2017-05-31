@@ -1,14 +1,13 @@
 package com.marvin.bundle.game.resources.view.swing.game;
 
-import com.marvin.bundle.framework.handler.Handler;
 import com.marvin.bundle.swing.resources.view.FormView;
 import java.util.HashMap;
 import javax.swing.JFrame;
 
 public class Create extends FormView {
     
-    public Create(Handler handler) {
-        super(handler, "gameForm");
+    public Create(String name) {
+        super(name);
     }
 
     @Override

@@ -14,21 +14,21 @@
         
         
         <!--views-->
-        <service id="persons" class="com.marvin.bundle.game.resources.view.swing.Home">
+<!--        <service id="persons" class="com.marvin.bundle.game.resources.view.swing.Home">
             <argument type="service" ref="action_handler" />
         </service>
         
-        <!--views-->
+        views
         <service id="games" class="com.marvin.bundle.game.resources.view.swing.Home">
-            <argument type="service" ref="action_handler" />
+            <argument type="service" ref="handler" />
         </service>
         
         <service id="game" class="com.marvin.bundle.game.resources.view.swing.game.Create">
-            <argument type="service" ref="action_handler" />
+            <argument type="service" ref="handler" />
         </service>
         
         <service id="play" class="com.marvin.bundle.game.resources.view.swing.game.Play">
-            <argument type="service" ref="action_handler" />
-        </service>
+            <argument type="service" ref="handler" />
+        </service>-->
     </services>
 </container>
